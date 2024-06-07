@@ -1,0 +1,79 @@
+
+.meat-page .categories {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.meat-page .heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--black);
+    padding: 2rem 0 3rem 0;
+    margin-top: 50px;
+}
+
+.meat-page .heading span {
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+}
+
+.meat-page .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 10px;
+}
+
+.meat-page .box {
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    margin: 10px;
+    transition: outline-offset 0.3s, outline 0.3s;
+}
+
+.meat-page .box:hover {
+    outline-offset: 0;
+    outline: var(--outline-hover);
+}
+
+.meat-page .box img {
+    height: 15rem;
+    margin: 1rem 0;
+}
+
+.meat-page .box h3 {
+    font-size: 2rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+
+.meat-page .box p {
+    color: var(--light-color);
+    line-height: 1.8;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.meat-page .box .btn {
+    background: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.meat-page .box .btn:hover {
+    background: #ff4500;
+}
+
+@import '../Categories.css';

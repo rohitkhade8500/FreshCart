@@ -1,0 +1,57 @@
+.reviews .heading {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--black);
+    padding: 2rem 0 3rem 0;
+    margin-top: 50px;
+  }
+  
+  .reviews span {
+    background: var(--orange);
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+  }
+  
+  .reviews .content .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .reviews .content .box-container .box {
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    outline: var(--outline);
+    outline-offset: -1rem;
+    padding: 3rem 2rem;
+    transition: linear 0.2s;
+    background: #fff;
+  }
+  
+  .reviews .content .box-container .box:hover {
+    outline-offset: 0;
+    outline: var(--outline-hover);
+  }
+  
+  .reviews .content .box-container .box img {
+    height: 15rem;
+    margin: 1rem 0;
+    border-radius: 50%;
+  }
+  
+  .reviews .content .box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+  }
+  
+  .reviews .content .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+  }
+  
